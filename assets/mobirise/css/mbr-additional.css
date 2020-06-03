@@ -839,14 +839,6 @@ section.lazy-placeholder:after {
 .cid-2EaaLyNHmO .hidden {
   display: none;
 }
-.cid-2EaaLyNHmO .wrap {
-  visibility: hidden;
-  z-index: 0;
-  display: block !important;
-}
-.cid-2EaaLyNHmO .copyright {
-  visibility: hidden;
-}
 .cid-2EaaLyNHmO .show {
   visibility: visible !important;
   bottom: 0;
