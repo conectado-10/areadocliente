@@ -843,10 +843,8 @@ section.lazy-placeholder:after {
   visibility: visible !important;
   bottom: 0;
 }
-@media (max-width: 768px) {
-  .cid-2EaaLyNHmO .wrap {
-    background-color: transparent !important;
-  }
+.cid-2EaaLyNHmO .mbr-section-subtitle {
+  visibility: hidden;
 }
 .cid-2EaaLyNHmO .mbr-section-subtitle {
   color: #ffffff;
