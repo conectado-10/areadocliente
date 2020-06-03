@@ -839,12 +839,22 @@ section.lazy-placeholder:after {
 .cid-2EaaLyNHmO .hidden {
   display: none;
 }
+.cid-2EaaLyNHmO .wrap {
+  visibility: hidden;
+  z-index: 0;
+  display: block !important;
+}
+.cid-2EaaLyNHmO .copyright {
+  visibility: hidden;
+}
 .cid-2EaaLyNHmO .show {
   visibility: visible !important;
   bottom: 0;
 }
-.cid-2EaaLyNHmO .mbr-section-subtitle {
-  visibility: hidden;
+@media (max-width: 768px) {
+  .cid-2EaaLyNHmO .wrap {
+    background-color: transparent !important;
+  }
 }
 .cid-2EaaLyNHmO .mbr-section-subtitle {
   color: #ffffff;
