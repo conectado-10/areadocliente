@@ -982,7 +982,9 @@ section.lazy-placeholder:after {
   color: #ffffff;
 }
 .cid-s0SO2lpZJC {
-  background-image: url("../../../assets/images/background1.jpg");
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #0f7699;
 }
 .cid-s0SO2lpZJC .mbr-figure {
   margin: 0 auto;
