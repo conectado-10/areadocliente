@@ -44,7 +44,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 12,
+    "uniqCompNum": 13,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -473,6 +473,79 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": "plugin-backend",
+          "_isSecondary": true,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".appbody": {
+              "margin": "auto",
+              "font-family": "sans-serif",
+              "font-size": "1.10rem",
+              "font-weight": "400",
+              "line-height": "1.5",
+              "color": "#495057",
+              "text-align": "center",
+              "background": "linear-gradient(to right, #b92b27, #1565c0)"
+            },
+            ".padding": {
+              "padding": "4rem !important",
+              "margin": "auto",
+              "display": "inline-block",
+              "max-width": "600px"
+            },
+            ".card": {
+              "margin-bottom": "1.5rem",
+              "position": "relative",
+              "display": "flex",
+              "-ms-flex-direction": "column",
+              "flex-direction": "column",
+              "min-width": "0",
+              "word-wrap": "break-word",
+              "background-color": "#fff",
+              "background-clip": "border-box",
+              "border": "1px solid #c8ced3",
+              "border-radius": "0.25rem"
+            },
+            ".card-header:first-child": {
+              "border-radius": "calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0"
+            },
+            ".card-header": {
+              "padding": ".75rem 1.25rem",
+              "margin-bottom": "0",
+              "background-color": "#f0f3f5",
+              "border-bottom": "1px solid #c8ced3"
+            },
+            ".card-body": {
+              "flex": "1 1 auto",
+              "padding": "1.25rem"
+            },
+            ".report": {
+              "font-size": "16px"
+            },
+            ".form-control:focus": {
+              "color": "#5c6873",
+              "background-color": "#fff",
+              "border-color": "#c8ced3 !important",
+              "outline": "0",
+              "box-shadow": "0 0 0 #f44336"
+            }
+          },
+          "_name": "plugin-backend",
+          "_customHTML": "<section mbr-id=\"_anchor\" class=\"mbr-section Plugin_Backend\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n <div class=\"containers appbody text-center\">\n<form class=\"padding installbackendapp\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <div class=\"card\">\n                <div class=\"card-header\">\n                    <strong>Plugin Manager Installer</strong>\n                </div>\n                <div class=\"card-body justify-content-center\">\n                    <div class=\"row fdiv\">\n                        <div class=\"col-md-12\">\n                            <div class=\"form-group\">\n            <input class=\"form-control\" id=\"appurl\" name=\"appurl\" type=\"text\" placeholder=\"App Pull Url\">\n                            </div>\n                        </div>\n\t\t\t\t\t\t<div class=\"col-md-12\">\n                            <div class=\"form-group\">\n                      <input class=\"form-control\" id=\"name\" name=\"user\" type=\"text\" placeholder=\"App ID\">\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-12 fdiv\">\n                            <div class=\"form-group\">\n\n                                <div class=\"input-group\">\n                                    <input class=\"form-control\" type=\"text\" name=\"access\" placeholder=\"Access Key\" autocomplete=\"access\">\n                                    <div class=\"input-group-append\">\n                                        <span class=\"input-group-text\">\n                                            <i class=\"fa fa-lock fas\"></i>\n                                        </span>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n\t\t\t\t\t\t<div class=\"col-sm-12\">\n                            <div class=\"report\"></div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"card-footer\">\n                    <button class=\"btn btn-sm btn-success float-right ajaxbtn\" type=\"submit\">\n                        <i class=\"mdi mdi-gamepad-circle\"></i> Install Application</button>\n\t\t\t\t\t\t<a href=\"./appinstaller/\" style=\"display: none\" class=\"btn btn-sm btn-success float-right inbtn\">Start</a>\n            </div>\n        </div>\n    </div>\n      </div>\n</form>   \n</div>\n   \n</section>",
+          "_cid": "s5wBJdRznq",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "plugin-backend-c"
         }
       ]
     },

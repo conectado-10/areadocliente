@@ -981,6 +981,67 @@ section.lazy-placeholder:after {
 .cid-2EaaLyNHmO .mbr-section-subtitle {
   color: #ffffff;
 }
+.cid-s5wBJdRznq {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-s5wBJdRznq .mbr-section {
+  text-align: center;
+  color: #fff;
+}
+.cid-s5wBJdRznq .appbody {
+  margin: auto;
+  font-family: sans-serif;
+  font-size: 1.10rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  background: linear-gradient(to right, #b92b27, #1565c0);
+}
+.cid-s5wBJdRznq .padding {
+  padding: 4rem !important;
+  margin: auto;
+  display: inline-block;
+  max-width: 600px;
+}
+.cid-s5wBJdRznq .card {
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #c8ced3;
+  border-radius: 0.25rem;
+}
+.cid-s5wBJdRznq .card-header:first-child {
+  border-radius: calc(-0.75rem) calc(-0.75rem) 0 0;
+}
+.cid-s5wBJdRznq .card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #f0f3f5;
+  border-bottom: 1px solid #c8ced3;
+}
+.cid-s5wBJdRznq .card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.cid-s5wBJdRznq .report {
+  font-size: 16px;
+}
+.cid-s5wBJdRznq .form-control:focus {
+  color: #5c6873;
+  background-color: #fff;
+  border-color: #c8ced3 !important;
+  outline: 0;
+  box-shadow: 0 0 0 #f44336;
+}
 .cid-s0SO2lpZJC {
   padding-top: 90px;
   padding-bottom: 90px;
