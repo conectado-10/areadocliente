@@ -475,77 +475,65 @@
           "_params": {}
         },
         {
-          "alias": "plugin-backend",
-          "_isSecondary": true,
+          "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'video')": {},
             ".mbr-section": {
               "text-align": "center",
               "color": "#fff"
             },
-            ".appbody": {
-              "margin": "auto",
-              "font-family": "sans-serif",
-              "font-size": "1.10rem",
-              "font-weight": "400",
-              "line-height": "1.5",
-              "color": "#495057",
-              "text-align": "center",
-              "background": "linear-gradient(to right, #b92b27, #1565c0)"
+            ".banner-heading .cont": {
+              "color": "#fff ",
+              "font-size": "47px",
+              "font-weight": "500",
+              "text-decoration": "none",
+              "display": "block"
             },
-            ".padding": {
-              "padding": "4rem !important",
-              "margin": "auto",
+            ".banner-heading P": {
+              "color": "#fff",
+              "padding-bottom": "20px",
+              "font-size": "19px",
+              "font-weight": "400"
+            },
+            ".banner-heading span p": {
+              "color": "#cd0e00"
+            },
+            ".btn": {
               "display": "inline-block",
-              "max-width": "600px"
-            },
-            ".card": {
-              "margin-bottom": "1.5rem",
-              "position": "relative",
-              "display": "flex",
-              "-ms-flex-direction": "column",
-              "flex-direction": "column",
-              "min-width": "0",
-              "word-wrap": "break-word",
-              "background-color": "#fff",
-              "background-clip": "border-box",
-              "border": "1px solid #c8ced3",
-              "border-radius": "0.25rem"
-            },
-            ".card-header:first-child": {
-              "border-radius": "calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0"
-            },
-            ".card-header": {
-              "padding": ".75rem 1.25rem",
-              "margin-bottom": "0",
-              "background-color": "#f0f3f5",
-              "border-bottom": "1px solid #c8ced3"
-            },
-            ".card-body": {
-              "flex": "1 1 auto",
-              "padding": "1.25rem"
-            },
-            ".report": {
-              "font-size": "16px"
-            },
-            ".form-control:focus": {
-              "color": "#5c6873",
-              "background-color": "#fff",
-              "border-color": "#c8ced3 !important",
-              "outline": "0",
-              "box-shadow": "0 0 0 #f44336"
+              "background-color": "#ff7200",
+              "color": "#fff",
+              "font-weight": "400",
+              "text-align": "center",
+              "white-space": "nowrap",
+              "vertical-align": "middle",
+              "-webkit-user-select": "none",
+              "-moz-user-select": "none",
+              "-ms-user-select": "none",
+              "user-select": "none",
+              "border": "1px solid #ff7200",
+              "padding": ".375rem .75rem",
+              "font-size": "1rem",
+              "line-height": "1.5",
+              "border-radius": ".25rem",
+              "transition": "color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out"
             }
           },
-          "_name": "plugin-backend",
-          "_customHTML": "<section mbr-id=\"_anchor\" class=\"mbr-section Plugin_Backend\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n <div class=\"containers appbody text-center\">\n<form class=\"padding installbackendapp\">\n    <div class=\"row\">\n        <div class=\"col-md-12\">\n            <div class=\"card\">\n                <div class=\"card-header\">\n                    <strong>Plugin Manager Installer</strong>\n                </div>\n                <div class=\"card-body justify-content-center\">\n                    <div class=\"row fdiv\">\n                        <div class=\"col-md-12\">\n                            <div class=\"form-group\">\n            <input class=\"form-control\" id=\"appurl\" name=\"appurl\" type=\"text\" placeholder=\"App Pull Url\">\n                            </div>\n                        </div>\n\t\t\t\t\t\t<div class=\"col-md-12\">\n                            <div class=\"form-group\">\n                      <input class=\"form-control\" id=\"name\" name=\"user\" type=\"text\" placeholder=\"App ID\">\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-md-12 fdiv\">\n                            <div class=\"form-group\">\n\n                                <div class=\"input-group\">\n                                    <input class=\"form-control\" type=\"text\" name=\"access\" placeholder=\"Access Key\" autocomplete=\"access\">\n                                    <div class=\"input-group-append\">\n                                        <span class=\"input-group-text\">\n                                            <i class=\"fa fa-lock fas\"></i>\n                                        </span>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n\t\t\t\t\t\t<div class=\"col-sm-12\">\n                            <div class=\"report\"></div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"card-footer\">\n                    <button class=\"btn btn-sm btn-success float-right ajaxbtn\" type=\"submit\">\n                        <i class=\"mdi mdi-gamepad-circle\"></i> Install Application</button>\n\t\t\t\t\t\t<a href=\"./appinstaller/\" style=\"display: none\" class=\"btn btn-sm btn-success float-right inbtn\">Start</a>\n            </div>\n        </div>\n    </div>\n      </div>\n</form>   \n</div>\n   \n</section>",
-          "_cid": "s5wBJdRznq",
+          "_name": "design-block",
+          "_customHTML": "<section mbr-id=\"_anchor\" class=\"mbr-section typewriter_heading\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"12\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"8\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n<fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"file:///C:/Users/SINGA/AppData/Local/Mobirise.com/Mobirise/projects/project-2020-07-15_230636/assets/images/mbr-1920x1279.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n      <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#465052\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <!---->\n    <!--Overlay-->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n <div class=\"banner-sektion banner-overlay\" id=\"home\">\n    <div class=\"container text-left\">\n        <div class=\"col-md-12 col-xs-12\">\n            <div class=\"banner-heading \">\n                <div class=\"cont\"><span>AREA DO CLIENTE,<span><br><span class=\"typewrite text-primary\" data-period=\"2000\" data-type=\"[ &quot;I am Creative .&quot;, &quot;I am Creative.&quot;, &quot;I Love to Design.&quot;, &quot;I Love to Develop.&quot; ]\">\n                    <span class=\"wrap\"></span></span></span></span></div>\n                <p>O QUE VOCÊS DESEJA?.</p>\n                <button type=\"button\" class=\"btn btn-primary site-btn\">ABOUT US</button>\n            </div>\n        </div>\n    </div>    \n\n</div>\n  <script>\n    //made by vipul mirajkar thevipulm.appspot.com\nvar TxtType = function(el, toRotate, period) {\n        this.toRotate = toRotate;\n        this.el = el;\n        this.loopNum = 0;\n        this.period = parseInt(period, 10) || 2000;\n        this.txt = '';\n        this.tick();\n        this.isDeleting = false;\n    };\n\n    TxtType.prototype.tick = function() {\n        var i = this.loopNum % this.toRotate.length;\n        var fullTxt = this.toRotate[i];\n\n        if (this.isDeleting) {\n        this.txt = fullTxt.substring(0, this.txt.length - 1);\n        } else {\n        this.txt = fullTxt.substring(0, this.txt.length + 1);\n        }\n\n        this.el.innerHTML = '<span class=\"wrap\">'+this.txt+'</span>';\n\n        var that = this;\n        var delta = 200 - Math.random() * 100;\n\n        if (this.isDeleting) { delta /= 2; }\n\n        if (!this.isDeleting && this.txt === fullTxt) {\n        delta = this.period;\n        this.isDeleting = true;\n        } else if (this.isDeleting && this.txt === '') {\n        this.isDeleting = false;\n        this.loopNum++;\n        delta = 500;\n        }\n\n        setTimeout(function() {\n        that.tick();\n        }, delta);\n    };\n\n    window.onload = function() {\n        var elements = document.getElementsByClassName('typewrite');\n        for (var i=0; i<elements.length; i++) {\n            var toRotate = elements[i].getAttribute('data-type');\n            var period = elements[i].getAttribute('data-period');\n            if (toRotate) {\n              new TxtType(elements[i], JSON.parse(toRotate), period);\n            }\n        }\n        // INJECT CSS\n        var css = document.createElement(\"style\");\n        css.type = \"text/css\";\n        css.innerHTML = \".typewrite > .wrap { border-right: 0.08em solid #fff}\";\n        document.body.appendChild(css);\n    };\n\n    </script>\n  \n</section>",
+          "_cid": "Qja4TjiUhq",
+          "_anchor": "design-block-Qja4TjiUhq",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "plugin-backend-c"
+          "_params": {}
         }
       ]
     },
