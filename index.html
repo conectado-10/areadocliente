@@ -26,88 +26,7 @@
   
 </head>
 <body>
-  <section class="mbr-section typewriter_heading cid-Qja4TjiUhq" id="design-block-Qja4TjiUhq">
-
-    
-    <!---->
-    <!--Overlay-->
-    
- <div class="banner-sektion banner-overlay" id="home">
-    <div class="container text-left">
-        <div class="col-md-12 col-xs-12">
-            <div class="banner-heading ">
-                <div class="cont"><span>Clientes,<span><br><span class="typewrite text-primary" data-period="2000" data-type="[ &quot;Oi tudo bem?&quot;, &quot;Bazar?&quot;, &quot;Marcação&quot;, &quot;Alugueis&quot; ]">
-                    <span class="wrap"></span></span></span></span></div>
-                <p>O QUE VOCÊS DESEJA?.</p>
-            </div>
-        </div>
-    </div>    
-
-</div>
-  <script>
-    //made by vipul mirajkar thevipulm.appspot.com
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-
-    </script>
-  
-</section>
-
-<section class="engine"><a href="https://mobirise.info/c">free web builder</a></section><section class="features1 cid-3LGnf5TFV2" id="design-block-3LGnf5TFV2">
+  <section class="features1 cid-3LGnf5TFV2" id="design-block-3LGnf5TFV2">
 
     
 
@@ -129,14 +48,14 @@ var TxtType = function(el, toRotate, period) {
         
         <div class="row justify-content-center">
 
-            <div class="card cardcolor p-3 col-12 col-md-6">
+            <div class="card cardcolor p-3 col-12 col-md-6 col-lg-6">
              <div class="card-wrapper">
                 <div class="card-img">
-                    <a href="https://www.123formbuilder.com/form-5114151/"><span class="mbr-iconfont ico1 mbri-shopping-basket" style="color: rgb(255, 51, 102); fill: rgb(255, 51, 102);"></span></a>
+                    <a href="https://www.123formbuilder.com/form-5114151/"><span class="mbr-iconfont ico1 mbri-cart-full" style="color: rgb(20, 157, 204); fill: rgb(20, 157, 204);"></span></a>
                 </div>
                 <div class="card-box">
-                    <h3 class="card-title align-left mbr-fonts-style display-5"><a href="page2.html">ENVIAR</a></h3>
-                    <h4 class="mbr-text align-left mbr-fonts-style display-4">Produtos Bazar</h4>
+                    <h3 class="card-title align-left mbr-fonts-style display-5"><a href="https://www.123formbuilder.com/form-5114151/">ENVIAR</a></h3>
+                    <h4 class="mbr-text align-left mbr-fonts-style display-4"><a href="https://www.123formbuilder.com/form-5114151/">Produtos Bazar</a></h4>
                 </div> 
                    <div class="card-img">
                     <a href="https://www.123formbuilder.com/form-5114151/"><span class="mbr-iconfont ico2 mobi-mbri-right mobi-mbri"></span></a>
@@ -144,14 +63,14 @@ var TxtType = function(el, toRotate, period) {
                 </div>
             </div>
 
-            <div class="card cardcolor p-3 col-12 col-md-6">
+            <div class="card cardcolor p-3 col-12 col-md-6 col-lg-6">
                 <div class="card-wrapper">
                 <div class="card-img">
-                    <a href="page2.html"><span class="mbr-iconfont ico1 mbri-edit" style="color: rgb(191, 206, 255); fill: rgb(191, 206, 255);"></span></a>
+                    <a href="https://www.123formbuilder.com/form-5109736/"><span class="mbr-iconfont ico1 mbri-edit" style="color: rgb(191, 206, 255); fill: rgb(191, 206, 255);"></span></a>
                 </div>
                 <div class="card-box">
-                    <h3 class="card-title align-left mbr-fonts-style display-5"><a href="page2.html">Vendas</a></h3>
-                    <h4 class="mbr-text align-left mbr-fonts-style display-4">Acompanhamento</h4>
+                    <h3 class="card-title align-left mbr-fonts-style display-5"><a href="https://www.123formbuilder.com/form-5109736/">Colocar Aluguel</a></h3>
+                    <h4 class="mbr-text align-left mbr-fonts-style display-4"><a href="https://www.123formbuilder.com/form-5109736/">Casa para alugar</a></h4>
                 </div> 
                    <div class="card-img">
                     <a href="page2.html"><span class="mbr-iconfont ico2 mobi-mbri-right mobi-mbri"></span></a>
@@ -159,35 +78,22 @@ var TxtType = function(el, toRotate, period) {
                 </div>
             </div>
 
-            <div class="card cardcolor p-3 col-12 col-md-6">
+            <div class="card cardcolor p-3 col-12 col-md-6 col-lg-6">
                <div class="card-wrapper">
                 <div class="card-img">
-                    <a href="page2.html"><span class="mbr-iconfont ico1 mbri-watch" style="color: rgb(85, 128, 255); fill: rgb(85, 128, 255);"></span></a>
+                    <a href="https://www.123formbuilder.com/form-5331443/"><span class="mbr-iconfont ico1 mbri-user" style="color: rgb(85, 128, 255); fill: rgb(85, 128, 255);"></span></a>
                 </div>
                 <div class="card-box">
-                    <h3 class="card-title align-left mbr-fonts-style display-5"><a href="page2.html">Produtos</a></h3>
-                    <h4 class="mbr-text align-left mbr-fonts-style display-4">Alterações</h4>
+                    <h3 class="card-title align-left mbr-fonts-style display-5"><a href="https://www.123formbuilder.com/form-5331443/">Agende Visita</a></h3>
+                    <h4 class="mbr-text align-left mbr-fonts-style display-4"><a href="https://www.123formbuilder.com/form-5331443/">Deixa eu ir até você</a></h4>
                 </div> 
                    <div class="card-img">
-                    <a href="page2.html"><span class="mbr-iconfont ico2 mobi-mbri-right mobi-mbri"></span></a>
+                    <a href="https://www.123formbuilder.com/form-5331443/"><span class="mbr-iconfont ico2 mobi-mbri-right mobi-mbri"></span></a>
                 </div>
                 </div>
             </div>
 
-            <div class="card cardcolor p-3 col-12 col-md-6">
-               <div class="card-wrapper">
-                <div class="card-img">
-                    <a href="https://www.123formbuilder.com/form-5331443/"><span class="mbr-iconfont ico1 mbri-users" style="color: rgb(127, 25, 51); fill: rgb(127, 25, 51);"></span></a>
-                </div>
-                <div class="card-box">
-                    <h3 class="card-title align-left mbr-fonts-style display-5"><a href="https://www.123formbuilder.com/form-5331443/" class="text-black">Marcação</a></h3>
-                    <h4 class="mbr-text align-left mbr-fonts-style display-4"><a href="https://www.123formbuilder.com/form-5331443/">Visitar Loja</a></h4>
-                </div> 
-                   <div class="card-img">
-                    <a href="https://www.123formbuilder.com/form-5331443/"><span class="mbr-iconfont ico2 mobi-mbri-right mobi-mbri" style="color: rgb(127, 25, 51); fill: rgb(127, 25, 51);"></span></a>
-                </div>
-                </div>
-            </div>
+            
 
         </div>
  </div> 
@@ -196,51 +102,7 @@ var TxtType = function(el, toRotate, period) {
 
 </section>
 
-<section class="_anchor cid-s1jNCgGPYY" id="design-block-5">
-
-    
-
-    
-
-    <div class="container"> 
-      <div>
-        <h2 class="mbr-title pt-2 mbr-fonts-style display-1"><strong><a href="https://www.123formbuilder.com/form-5109736/">CADASTRE -SE</a>&nbsp;</strong></h2>
-                    <div class="mbr-section-text">
-                        <h3 class="mbr-text mb-5 pt-3 mbr-light mbr-fonts-style display-5"><strong>Faça parte seja um associado e divulgue sua casa</strong></h3>
-                    </div>
-      </div>
-        <div class="col-md-12">
-            <div class="media-container-row">
-                <div class="mbr-figure" style="width: 45%;">
-                    <a href="https://www.123formbuilder.com/form-5109736/"><img src="assets/images/mbr-3-1920x1280.jpg" alt="Mobirise" title=""></a>
-                </div>
-                <div class="align-left aside-content v-center">
-                    <div class="block-content">
-                        <div class="card">
-                            <div class="media">
-                              <div class="align-self-center card-img pb-3">
-                                    <a href="https://www.123formbuilder.com/form-5109736/"><span class="mbr-iconfont mbri-edit" style="font-size: 48px; color: rgb(35, 35, 35); fill: rgb(35, 35, 35);"></span></a>
-                                </div>     
-                                <div class="media-body">
-                                    <h4 class="card-title mbr-fonts-style display-5"><a href="https://www.123formbuilder.com/form-5109736/" class="text-black">Anuncie</a></h4>
-                                </div>
-                            </div>                
-
-                            <div class="card-box">
-                                <p class="block-text mbr-fonts-style display-7">Cadastr-se, e veja as vantagens tem de vocês esta alugando suas casas.<br></p>
-                            </div>
-                        </div>
-
-                        
-                      
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>          
-</section>
-
-<section class="team1 cid-s1jOhvZ36R" id="team1-7">
+<section class="engine"><a href="https://mobirise.info/q">free responsive site templates</a></section><section class="team1 cid-s1jOhvZ36R" id="team1-7">
     
     
     
@@ -382,13 +244,13 @@ var TxtType = function(el, toRotate, period) {
   <script src="https://apis.google.com/js/plusone.js"></script>
   <script src="assets/facebook-plugin/facebook-script.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/singa4real/shopcart.js"></script>
-  <script src="assets/witsec-mailform/witsec-mailform.js"></script>
-  <script src="assets/singa4real/singa4real-form.js"></script>
   <script src="assets/singa4real/plugin-backend.js"></script>
+  <script src="assets/singa4real/singa4real-form.js"></script>
   <script src="assets/theme/js/script.js"></script>
+  <script src="assets/witsec-mailform/witsec-mailform.js"></script>
   
   
 </body>
