@@ -767,45 +767,53 @@ section.lazy-placeholder:after {
 .cid-3LGnf5TFV2 .mbr-section-btn {
   color: #716c80;
 }
-.cid-s1jOhvZ36R {
-  padding-top: 15px;
+.cid-sb2PDjuO8C {
+  padding-top: 90px;
   padding-bottom: 90px;
   background-color: #ffffff;
 }
-.cid-s1jOhvZ36R .mbr-section-subtitle {
+.cid-sb2PDjuO8C .mbr-section-subtitle {
   color: #767676;
+  text-align: center;
+  font-weight: 300;
 }
-.cid-s1jOhvZ36R .media-row {
-  display: -webkit-flex;
-  justify-content: center;
-  -webkit-justify-content: center;
+.cid-sb2PDjuO8C .step {
+  width: 72px;
+  height: 72px;
+  font-size: 36px;
+  border-radius: 50%;
+  border: 2px solid #efefef;
+  padding-bottom: 0;
 }
-.cid-s1jOhvZ36R .team-item {
-  transition: all .2s;
-  margin-bottom: 2rem;
+@media (min-width: 768px) {
+  .cid-sb2PDjuO8C .separline .step-wrapper {
+    position: relative;
+  }
+  .cid-sb2PDjuO8C .separline .step-wrapper:before,
+  .cid-sb2PDjuO8C .separline .step-wrapper:after {
+    top: 38px;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: calc(50% + 15px - 36px - 8px);
+    background-color: #efefef;
+  }
+  .cid-sb2PDjuO8C .separline .step-wrapper:before {
+    left: -15px;
+  }
+  .cid-sb2PDjuO8C .separline .step-wrapper:after {
+    left: calc(50% + 8px + 36px);
+  }
+  .cid-sb2PDjuO8C .separline.last-child .step-wrapper:after,
+  .cid-sb2PDjuO8C .separline:nth-child(3n) .step-wrapper:after,
+  .cid-sb2PDjuO8C .separline:nth-child(3n+1) .step-wrapper:before {
+    background: none;
+  }
 }
-.cid-s1jOhvZ36R .team-item .item-image img {
-  width: 100%;
-}
-.cid-s1jOhvZ36R .team-item .item-name p {
-  margin-bottom: 0;
-}
-.cid-s1jOhvZ36R .team-item .item-role p {
-  margin-bottom: 0;
-}
-.cid-s1jOhvZ36R .team-item .item-social {
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -webkit-justify-content: center;
-}
-.cid-s1jOhvZ36R .team-item .item-social .socicon {
-  color: #232323;
-  font-size: 17px;
-}
-.cid-s1jOhvZ36R .team-item .item-caption {
-  background: #efefef;
+@media (max-width: 767px) {
+  .cid-sb2PDjuO8C .card:not(.last-child) {
+    padding-bottom: 1.5rem;
+  }
 }
 .cid-2EaaLyNHmO input,
 .cid-2EaaLyNHmO textarea,
